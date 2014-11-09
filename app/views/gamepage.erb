@@ -1,0 +1,21 @@
+<h1>Enter Rock Paper or Scissors</h1>
+
+<% if @name %>
+	<h3> Welcome <%= @name %></h3>
+<% end %>
+
+<form action="/gamepage" method="post">
+Fight:
+<input type="radio" value="rock" name="weapon_choice">rock<br>
+<input type="radio" value="paper" name="weapon_choice">paper<br>
+<input type="radio" value="scissors" name="weapon_choice">scissors<br>
+		<input type="submit" value="Fight">
+</form>
+
+<% if @weapon_choice %>
+<div>Computer chooses <%= @computer_choice %> and <%= @name %> chooses <%= @weapon_choice %> </div>
+
+<div> <%=GAME.winner_of(@weapon_choice, @computer_choice)%> </div>
+
+<% end %>
+
