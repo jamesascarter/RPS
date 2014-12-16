@@ -14,7 +14,3 @@ end
 Then(/^I should see content determining the winner$/) do
   expect(page).to have_content(text)
 end
-
-Then(/^choose an opponent$/) do
-  choose('computer')
-end

@@ -15,4 +15,9 @@ Then(/^I should enter gamepage$/) do
   visit '/gamepage'
 end
 
+Then(/^choose an opponent$/) do
+  choose('computer')
+end
+
+
 

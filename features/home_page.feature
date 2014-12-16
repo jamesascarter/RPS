@@ -10,3 +10,7 @@ Feature: Starting the RPS Game
 			Given I am on the homepage
 			When I sign in
 			Then I should enter gamepage
+
+		Scenario: Choosing an opponent
+				Given I am on the homepage
+				Then choose an opponent
