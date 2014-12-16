@@ -6,10 +6,14 @@
 
 <form action="/gamepage" method="post">
 Fight:
-<input type="radio" value="rock" name="weapon_choice">rock<br>
-<input type="radio" value="paper" name="weapon_choice">paper<br>
-<input type="radio" value="scissors" name="weapon_choice">scissors<br>
+<input type="radio" value="rock" name="weapon_choice" id="rock">rock<br>
+<input type="radio" value="paper" name="weapon_choice" id="paper">paper<br>
+<input type="radio" value="scissors" name="weapon_choice" id="scissors">scissors<br>
 		<input type="submit" value="Fight">
+Opponent:
+<input type="radio" value="computer" name="opponent" id="computer">Computer<br>
+<input type="radio" value="player2" name="opponent" id="player2">Player 2<br>
+
 </form>
 
 <% if @weapon_choice %>

@@ -3,7 +3,7 @@ Given(/^I am on the gamepage$/) do
 end
 
 Then(/^I choose a choice of weapon$/) do
-  click_radio 'weapon_choice', with: 'Rock'
+  choose("rock")
   click_button 'Fight'
 end
 
@@ -13,4 +13,8 @@ end
 
 Then(/^I should see content determining the winner$/) do
   expect(page).to have_content(text)
+end
+
+Then(/^choose an opponent$/) do
+  choose('computer')
 end

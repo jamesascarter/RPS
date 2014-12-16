@@ -7,11 +7,15 @@ Feature: Playing the RPS game
 				Given I am on the gamepage
 				Then I should see "Enter Rock Paper or Scissors"
 
+			Scenario: Choosing an opponent
+				Given I am on the gamepage
+				Then choose an opponent
+
 			Scenario: Playing the game
 				Given I am on the gamepage
 				Then I choose a choice of weapon
 
-				Scenario: Determining a winner
+			Scenario: Determining a winner
 				Given I am on the gamepage
 				When I click the fight button
 				Then I should see content determining the winner
