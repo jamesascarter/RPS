@@ -19,5 +19,10 @@ Then(/^choose an opponent$/) do
   choose('computer')
 end
 
+When(/^I enter "(.*?)"$/) do |arg1|
+	fill_in 'name', with: ""
+	click_button 'Sign in'
+end
+
 
 

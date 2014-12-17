@@ -11,6 +11,11 @@ Feature: Starting the RPS Game
 			When I sign in
 			Then I should enter gamepage
 
+		Scenario: No name entered
+			Given I am on the homepage
+			When I enter ""
+			Then I should see "Please enter name"
+
 		Scenario: Choosing an opponent
 				Given I am on the homepage
 				Then choose an opponent
