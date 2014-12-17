@@ -5,11 +5,10 @@ get '/' do
 end
 
 post '/new_player' do
-  # @name = params[:name]
-  @opponent = params[:opponent]
+  # @opponent = params[:opponent]
   session[:name] = params[:name]
-  if params[:name] ==""
-		flash[:notice]="Please enter name"
+  if params[:name] =="" || params[:opponent] == nil
+		flash[:notice]="Please enter name AND opponent"
 		redirect('/')
 
 	else
