@@ -19,3 +19,7 @@ post '/new_player' do
 	end
   
 end
+
+get '/multiplayer' do
+	erb :multiplayer
+end

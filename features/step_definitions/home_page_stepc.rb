@@ -24,5 +24,29 @@ When(/^I enter "(.*?)"$/) do |arg1|
 	click_button 'Sign in'
 end
 
+When(/^I choose computer opponent$/) do
+	choose('computer')
+end
+
+
+Then(/^I should enter computer gamepage$/) do
+   visit '/computer'
+end
+
+When(/^I choose multiplayer opponent$/) do
+	choose('multiplayer')
+end
+
+Then(/^I should enter multiplayer page$/) do
+	visit('/multiplayer')
+end
+
+Given(/^I am on the multiplayer page$/) do
+	visit '/multiplayer'
+end
+
+
+
+
 
 

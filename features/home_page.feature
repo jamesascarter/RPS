@@ -23,5 +23,15 @@ Feature: Starting the RPS Game
 		Scenario: Choosing computer opponent
 				Given I am on the homepage
 				When I choose computer opponent
-				When i sign in
+				When I sign in
 				Then I should enter computer gamepage
+
+		Scenario: Choosing multiplayer mode
+				Given I am on the homepage
+				When I choose multiplayer opponent
+				When I sign in
+				Then I should enter multiplayer page
+
+		Scenario: Adding player2
+				Given I am on the multiplayer page
+				Then I should see "Player 2 please enter details below..."
