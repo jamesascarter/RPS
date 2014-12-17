@@ -5,7 +5,7 @@ Feature: Playing the RPS game
 
 			Scenario: Visiting the gamepage
 				Given I am on the gamepage
-				Then I should see "Enter Rock Paper or Scissors"
+				Then I should see "Enter Rock, Paper or Scissors..."
 
 			Scenario: Playing the game
 				Given I am on the gamepage

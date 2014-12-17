@@ -1,6 +1,6 @@
 GAME = Game.new
 
-get '/gamepage' do
+get '/computer' do
   # @name =session[:name]
   # @weapon_choice = params[:weapon_choice]
   # @computer_choice = GAME.computer_choice

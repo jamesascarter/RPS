@@ -1,5 +1,5 @@
 Given(/^I am on the gamepage$/) do
-  visit '/gamepage'
+  visit '/computer'
 end
 
 Then(/^I choose a choice of weapon$/) do

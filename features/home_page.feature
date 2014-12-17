@@ -19,3 +19,9 @@ Feature: Starting the RPS Game
 		Scenario: Choosing an opponent
 				Given I am on the homepage
 				Then choose an opponent
+
+		Scenario: Choosing computer opponent
+				Given I am on the homepage
+				When I choose computer opponent
+				When i sign in
+				Then I should enter computer gamepage
