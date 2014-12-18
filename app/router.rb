@@ -9,6 +9,7 @@ require 'rack-flash'
 
 enable :sessions
 use Rack::Flash
+set :session_secret, 'super secrets'
 
 
 

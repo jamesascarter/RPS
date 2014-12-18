@@ -59,11 +59,19 @@ describe Game do
     expect(game.player_wins).to eq(1)
   end
 
-  it "should keep track of the number of wins to the player" do
+  it "should keep track of the number of wins to the computer" do
     weapon_choice = 'paper'
     computer_choice = 'scissors'
     game.winner_of(weapon_choice, computer_choice)
     expect(game.computer_wins).to eq(1)
+  end
+
+  it "should keep track of the number fo draws" do
+    weapon_choice = 'paper'
+    computer_choice = 'paper'
+    game.winner_of(weapon_choice, computer_choice)
+    expect(game.number_of_draws).to eq(1)
+
   end
 
 
