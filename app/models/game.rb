@@ -1,9 +1,10 @@
 class Game
 
-	attr_accessor :player, :winner, :computer_choice
+	attr_accessor :player, :winner, :computer_choice, :player_wins
 
 	def initialize
 		@computer_choice = nil
+		@player_wins = nil
 	end
 
 	def computer_choice
@@ -14,8 +15,11 @@ class Game
 		winninggesture = {"rock" => "scissors", "scissors" => "paper", "paper" => "rock"}
 		if weapon_choice == computer_choice
 			"It's a draw!"
+
 		elsif winninggesture[weapon_choice] == computer_choice
+				@player_wins = player_wins =+ 1
 				"Player wins!"
+
 		else "Computer wins!"
 		end
 	end

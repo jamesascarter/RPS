@@ -46,10 +46,24 @@ describe Game do
     expect(game.winner_of(weapon_choice, computer_choice)).to eq("Computer wins!")
   end
 
-   it "should return 'Computer wins!' when computer wins with rock" do
+  it "should return 'Computer wins!' when computer wins with rock" do
     weapon_choice = 'scissors'
     computer_choice = 'rock'
     expect(game.winner_of(weapon_choice, computer_choice)).to eq("Computer wins!")
+  end
+
+  it "should keep track of the number of wins to the player" do
+    weapon_choice = 'scissors'
+    computer_choice = 'paper'
+    game.winner_of(weapon_choice, computer_choice)
+    expect(game.player_wins).to eq(1)
+  end
+
+  it "should keep track of the number of wins to the player" do
+    weapon_choice = 'paper'
+    computer_choice = 'scissors'
+    game.winner_of(weapon_choice, computer_choice)
+    expect(game.computer_wins).to eq(1)
   end
 
 
