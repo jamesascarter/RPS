@@ -30,8 +30,6 @@ Feature: Starting the RPS Game
 				Given I am on the homepage
 				When I choose multiplayer opponent
 				When I sign in
-				Then I should enter multiplayer page
+				Then I should enter waiting page
 
-		Scenario: Adding player2
-				Given I am on the multiplayer page
-				Then I should see "Player 2 please enter details below..."
+		

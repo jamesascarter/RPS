@@ -15,3 +15,7 @@ Feature: Playing the RPS game
 				Given I am on the gamepage
 				When I click the fight button
 				Then I should see content determining the winner
+
+			Scenario: Waiting for player2
+				Given I am on the waiting page
+				Then I should see "Waiting for player 2 to join..."

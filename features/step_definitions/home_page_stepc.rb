@@ -37,13 +37,15 @@ When(/^I choose multiplayer opponent$/) do
 	choose('multiplayer')
 end
 
-Then(/^I should enter multiplayer page$/) do
-	visit('/multiplayer')
+Then(/^I should enter waiting page$/) do
+	visit('/waiting_page')
 end
 
 Given(/^I am on the multiplayer page$/) do
-	visit '/multiplayer'
+	visit '/waiting_page'
 end
+
+
 
 
 

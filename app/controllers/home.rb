@@ -1,5 +1,3 @@
-
-
 get '/' do
   erb :home_page
 end
@@ -12,7 +10,7 @@ post '/new_player' do
 
 	else
 		player_name = params[:name]
-		PLAYER = Player.new(player_name)
+		PLAYER = Player.new(params[:name])
 		session[:name] = params[:name]
 		params[:opponent] == 'computer' ? @opponent = 'computer' : @opponent = 'multiplayer'
 		redirect("/#{@opponent}")
