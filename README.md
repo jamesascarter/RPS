@@ -9,6 +9,13 @@ player can choose one option
 game will choose a random option
 winner will be declared
 
+### Tech
+Ruby
+Sinatra
+Rspec
+Cucumber
+Capybara
+
 Bonus 1: Multiplayer
 
 Bonus 2: Keep score!
