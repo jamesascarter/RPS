@@ -9,9 +9,9 @@ post '/new_player' do
 		redirect('/')
 
 	else
-		player_name = params[:name]
 		PLAYER = Player.new(params[:name])
 		session[:name] = params[:name]
+		GAME.add_player(PLAYER)
 		params[:opponent] == 'computer' ? @opponent = 'computer' : @opponent = 'multiplayer'
 		redirect("/#{@opponent}")
 	end
