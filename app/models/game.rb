@@ -1,12 +1,13 @@
 class Game
 
-	attr_accessor :player, :winner, :computer_choice, :player_wins, :computer_wins, :number_of_draws
+	attr_accessor :computer_choice, :player_wins, :computer_wins, :number_of_draws, :players
 
 	def initialize
 		@computer_choice = nil
 		@player_wins = nil
 		@computer_wins = nil
 		@number_of_draws = nil
+		@players = []
 	end
 
 	def computer_choice
@@ -31,5 +32,9 @@ class Game
 				computer_wins =+ 1	 
 				"Computer wins!"
 		end
+	end
+
+	def add_player(player)
+		@players << player
 	end
 end

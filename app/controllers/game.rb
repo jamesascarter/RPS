@@ -1,5 +1,3 @@
-require_relative 'home'
-
 GAME = Game.new
 
 get '/computer' do

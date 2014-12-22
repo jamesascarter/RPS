@@ -4,6 +4,7 @@ require './app/models/game'
 describe Game do
 
 	let (:game) {Game.new}
+  let (:player) {Player.new("James")}
 
 	it "should provide a computer choice" do
 		game.computer_choice
@@ -59,7 +60,7 @@ describe Game do
     expect(game.player_wins).to eq(1)
   end
 
-  it "should keep track of the number of wins to the computer" do
+  xit "should keep track of the number of wins to the computer" do
     weapon_choice = 'paper'
     computer_choice = 'scissors'
     game.winner_of(weapon_choice, computer_choice)
@@ -71,7 +72,11 @@ describe Game do
     computer_choice = 'paper'
     game.winner_of(weapon_choice, computer_choice)
     expect(game.number_of_draws).to eq(1)
+  end
 
+  it "should be able to hold players" do
+    game.add_player(player)
+    expect(game.players.count).to eq(1)
   end
 
 
