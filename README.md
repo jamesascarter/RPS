@@ -9,6 +9,13 @@ player can choose one option
 game will choose a random option
 winner will be declared
 
+Bonus 1: Multiplayer
+
+Bonus 2: Keep score!
+
+Bonus 3: Special Rules - lizard, spock
+
+
 ### Tech
 Ruby
 Sinatra
@@ -16,9 +23,32 @@ Rspec
 Cucumber
 Capybara
 
-Bonus 1: Multiplayer
+Clone this repo:
+```sh
+$ git clone https://github.com/jamesascarter/RPS.git
+```
 
-Bonus 2: Keep score!
+Change into the directory:
+```sh
+$ cd RPS
+```
 
-Bonus 3: Special Rules - lizard, spock
+To run the rspec tests:
+```sh
+$ rspec
+```
+
+To run the cucumber tests:
+```sh
+$ cucumber
+```
+
+To run the code:
+```sh
+$ rackup
+    
+```
+
+The in your browser enter localhost address specified in the command-line.
+
 

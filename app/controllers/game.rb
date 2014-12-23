@@ -17,5 +17,5 @@ get '/multiplayer' do
 end
 
 get '/multiplayerchoice' do
-  erb :gamepage
+  erb :multiplayerchoice
 end

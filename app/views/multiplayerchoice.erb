@@ -1,0 +1,12 @@
+<% if @name %>
+	<h3> Welcome <%= @name %></h3>
+<% end %>
+<p>Enter Rock, Paper or Scissors...</p>
+
+<form action="/gamepage" method="post">
+<input type="radio" value="rock" name="weapon_choice" id="rock">rock<br>
+<input type="radio" value="paper" name="weapon_choice" id="paper">paper<br>
+<input type="radio" value="scissors" name="weapon_choice" id="scissors">scissors<br>
+		<input type="submit" value="Fight">
+
+</form>
