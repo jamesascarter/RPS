@@ -10,9 +10,12 @@ post '/gamepage' do
 end
 
 get '/multiplayer' do
+	if GAME.player_two != nil
+		redirect '/multiplayerchoice'
+	end
 	erb :multiplayer
 end
 
-get '/waiting_page' do
-  erb :waiting_page
+get '/multiplayerchoice' do
+  erb :gamepage
 end
