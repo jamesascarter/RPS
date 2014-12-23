@@ -5,6 +5,7 @@ describe Game do
 
 	let (:game) {Game.new}
   let (:player) {Player.new("James")}
+  let (:player1) {Player.new("Ella")}
 
 	it "should provide a computer choice" do
 		game.computer_choice
@@ -74,9 +75,16 @@ describe Game do
     expect(game.number_of_draws).to eq(1)
   end
 
-  it "should be able to hold players" do
+  it "should be able to hold player" do
     game.add_player(player)
-    expect(game.players.count).to eq(1)
+    expect(game.player_one).to eq(player)
+  end
+
+   it "should be able to hold players" do
+    game.add_player(player)
+    game.add_player(player1)
+    expect(game.player_one).to eq(player)
+    expect(game.player_two).to eq(player1)
   end
 
 

@@ -1,5 +1,3 @@
-GAME = Game.new
-
 get '/computer' do
   erb :gamepage
 end
@@ -13,11 +11,6 @@ end
 
 get '/multiplayer' do
 	erb :multiplayer
-	if GAME.players.count == 2
-		redirect '/computer'
-	else
-		redirect '/waiting_page'
-	end
 end
 
 get '/waiting_page' do

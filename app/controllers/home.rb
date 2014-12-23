@@ -1,3 +1,5 @@
+GAME = Game.new
+
 get '/' do
   erb :home_page
 end
@@ -9,9 +11,12 @@ post '/new_player' do
 		redirect('/')
 
 	else
-		PLAYER = Player.new(params[:name])
-		session[:name] = params[:name]
-		GAME.add_player(PLAYER)
+		player = Player.new(params[:name])
+		GAME.add_player(player)
+		p session.inspect
+		p GAME.inspect
+		@name = player.name
+		session[:me] = player
 		params[:opponent] == 'computer' ? @opponent = 'computer' : @opponent = 'multiplayer'
 		redirect("/#{@opponent}")
 	end
