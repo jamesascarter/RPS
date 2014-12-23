@@ -4,7 +4,7 @@ end
 
 post '/gamepage' do
   @name =session[:name]
-  PLAYER.weapon_choice = params[:weapon_choice]
+  @weapon_choice = params[:weapon_choice]
   @computer_choice = GAME.computer_choice
   erb :gamepage
 end

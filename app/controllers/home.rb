@@ -13,10 +13,8 @@ post '/new_player' do
 	else
 		player = Player.new(params[:name])
 		GAME.add_player(player)
-		p session.inspect
-		p GAME.inspect
 		@name = player.name
-		session[:me] = player
+		session[:me] = player.name
 		params[:opponent] == 'computer' ? @opponent = 'computer' : @opponent = 'multiplayer'
 		redirect("/#{@opponent}")
 	end

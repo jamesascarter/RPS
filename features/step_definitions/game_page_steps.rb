@@ -7,6 +7,7 @@ Given(/^I am on the gamepage$/) do
 end
 
 Then(/^I choose a choice of weapon$/) do
+  
   choose("rock")
   click_button 'Fight'
 end

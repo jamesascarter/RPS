@@ -11,10 +11,10 @@
 
 </form>
 
-<% if PLAYER.weapon_choice %>
-<div>Computer chooses <%= @computer_choice %> and <%= @name %> chooses <%= PLAYER.weapon_choice %> </div>
+<% if @weapon_choice %>
+<div>Computer chooses <%= @computer_choice %> and <%= @name %> chooses <%= @weapon_choice %> </div>
 
-<div> <%=GAME.winner_of(PLAYER.weapon_choice, @computer_choice)%> </div>
+<div> <%=GAME.winner_of(@weapon_choice, @computer_choice)%> </div>
 
 <div> Player wins: <%=GAME.player_wins%> </div>
 
