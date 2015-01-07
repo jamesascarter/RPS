@@ -1,7 +1,6 @@
-Makers Academy: Week 3 Challenge
-An online rock, paper, scissors game
+### RPS
 
-Spec:
+Challenge set by Makers Academy requires me to:
 
 player has to enter their name before the game
 player will be presented with their choices (rock, paper, scissors)
@@ -22,6 +21,10 @@ Sinatra
 Rspec
 Cucumber
 Capybara
+
+### How to use
+
+
 
 Clone this repo:
 ```sh
@@ -49,6 +52,11 @@ $ rackup
     
 ```
 
-The in your browser enter localhost address specified in the command-line.
+Then in your browser enter localhost address specified in the command-line.
+
+### Improvements
+
+* Add lizard and spock to logic.
+* Complete the mutiplayer game functionality. Nearly completed?!
 
 
