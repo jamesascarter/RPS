@@ -1,12 +1,12 @@
 ### RPS
 
-Challenge set by Makers Academy requires me to:
+Challenge set by Makers Academy requires me to build a Rock, Paper, Scissors game:
 
-player has to enter their name before the game
-player will be presented with their choices (rock, paper, scissors)
-player can choose one option
-game will choose a random option
-winner will be declared
+* player has to enter their name before the game
+* player will be presented with their choices (rock, paper, scissors)
+* player can choose one option
+* game will choose a random option
+* winner will be declared
 
 Bonus 1: Multiplayer
 
